@@ -23,7 +23,7 @@ header {
 
 header h1 div {
   transform: rotateZ(-25deg);
-  margin: 0 10px;
+  margin-left: 20px;
   color: orange;
 }
 
