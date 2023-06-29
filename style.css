@@ -1,0 +1,108 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap");
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: black;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 500;
+  font-family: "Belanosima", sans-serif;
+}
+
+header h1 div {
+  transform: rotateZ(-25deg);
+  margin: 0 10px;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#webcam {
+  transform: rotateY(180deg);
+  width: 60%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.wrapper {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  padding-right: 20px;
+}
+
+.video-container {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid green;
+}
+
+.buttons {
+  width: 100%;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.buttons span {
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+}
+
+.buttons span:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.video-container-red {
+  border-color: red;
+}
+
+.video-link {
+  margin-bottom: 10px;
+}
+
+.video-link:hover {
+  opacity: 0.5;
+}
+
+.wrapper h1 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+}
