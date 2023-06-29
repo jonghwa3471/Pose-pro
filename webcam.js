@@ -15,6 +15,8 @@ navigator.mediaDevices
 function handleDisconnect() {
   webCam.classList.toggle("hide");
   videoContainer.classList.toggle("video-container-red");
+
+  document.createElement("");
 }
 
 disconnect.addEventListener("click", handleDisconnect);
