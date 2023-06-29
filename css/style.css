@@ -134,3 +134,27 @@ header h1 {
   font-size: 24px;
   color: white;
 }
+
+p {
+  position: absolute;
+  right: 45vh;
+  top: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+#Timer {
+  border: none;
+  background: transparent;
+  color: white;
+  font-family: "Hahmlet", serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#Timer:focus {
+  border: none;
+}
