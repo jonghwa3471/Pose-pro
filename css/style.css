@@ -1,12 +1,31 @@
 @import "reset.css";
-@import "colors.css";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbit&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Noto Sans KR", sans-serif;
   background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fa-arrow-right-to-bracket {
+  transform: rotateZ(180deg);
+  font-size: 48px;
+  color: white;
+}
+
+.fa-arrow-right-to-bracket:hover {
+  color: tomato;
 }
 
 header {
@@ -14,37 +33,32 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
   font-size: 60px;
   margin-bottom: 20px;
-  color: white;
   font-weight: 500;
-  font-family: "Belanosima", sans-serif;
-}
-
-header h1 div {
-  transform: rotateZ(-25deg);
-  margin-left: 20px;
-  color: orange;
+  font-family: "Hahmlet", serif;
+  font-weight: 700;
+  padding: 20px 0;
 }
 
 header h1 {
   display: flex;
   justify-content: center;
-  width: 70%;
+  width: 80%;
   padding: 10px 0;
   text-align: center;
+  color: white;
 }
 
 #webcam {
   transform: rotateY(180deg);
-  width: 60%;
+  width: 50%;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 5fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr;
 }
 
 .wrapper {
@@ -54,11 +68,12 @@ header h1 {
 }
 
 .video-container {
+  height: 600px;
   margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid green;
+  border: 3px solid greenyellow;
 }
 
 .buttons {
@@ -73,7 +88,7 @@ header h1 {
 .buttons span {
   width: 70px;
   height: 70px;
-  background-color: red;
+  background-color: tomato;
   border-radius: 50%;
   color: white;
   display: flex;

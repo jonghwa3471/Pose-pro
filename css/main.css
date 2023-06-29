@@ -1,0 +1,95 @@
+@import "reset.css";
+@import "colors.css";
+@import url("https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600;700&display=swap");
+
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 80px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 500;
+  font-family: "Belanosima", sans-serif;
+}
+
+header h1 div {
+  transform: rotateZ(-25deg);
+  margin-left: 20px;
+  color: orange;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  font-family: "Hahmlet", serif;
+  font-weight: 700;
+  color: white;
+}
+
+main {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main__menu {
+  margin-top: 10vh;
+  width: 300px;
+  height: 400px;
+  background-color: deepskyblue;
+  border-radius: 20px;
+  padding: 10px;
+  transition: all 0.1s linear;
+  font-family: "Hahmlet", serif;
+  font-weight: 700;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__menu:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.main__menu h1 {
+  font-size: 42px;
+}
+
+.main__menu img {
+  margin-top: 20px;
+  width: 40%;
+}
