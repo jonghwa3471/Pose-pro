@@ -146,6 +146,11 @@ p {
   font-size: 24px;
 }
 
+p:last-child {
+  right: 5vh;
+  top: 5vh;
+}
+
 #Timer {
   border: none;
   background: transparent;
